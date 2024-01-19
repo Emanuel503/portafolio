@@ -1,23 +1,41 @@
+const { nextui } = require("@nextui-org/react");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {},
-    colors: {
-      'colormind-black': '#111111',
-      'colormind-white': '#e6e6e6',
-      'colormind-500-white': '#9d9d9d',
-      'colormind-gray': '#191919',
-      'colormind-blue': '#0e2c40',
-      'colormind-500-blue': '#1a4a5a',
-      'colormind-300-blue': '#148d8d',
-      'colormind-green': '#c1e1a7',
-      'colormind-orange': '#efbc75',
-    },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui({
+    themes: {
+      light: {
+        colors: {
+          'colormind-title': '#828282',
+          'colormind-background': '#e6e6e6',
+          'colormind-text': '#111111',
+          'colormind-button': '#1a4a5a',
+          'colormind-hover': '#0e2c40',
+          'colormind-primary': '#148d8d',
+          'colormind-secondary': '#c1e1a7',
+        },
+      },
+      dark: {
+        colors: {
+          'colormind-title': '#111111',
+          'colormind-background': '#191919',
+          'colormind-text': '#e6e6e6',
+          'colormind-button': '#e6e6e6',
+          'colormind-hover': '#7b786d',
+          'colormind-primary': '#148d8d',
+          'colormind-secondary': '#c1e1a7',
+        },
+      },
+    },
+  })],
 }
 
