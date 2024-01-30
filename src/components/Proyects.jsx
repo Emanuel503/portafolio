@@ -11,14 +11,16 @@ export default function Proyects() {
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="proyects">
         <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Proyectos</h1>
 
-        <div className="grid gap-12 grid-cols-12">
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards">
-                <CardBody className="overflow-visible py-2 ">
-                    <Image
-                        alt="Imagen del proyecto 1 - Sistema interno de DISAM"
-                        className="object-cover rounded-xl"
-                        src={proyecto1}
-                    />
+        <div className="md:grid gap-12 grid-cols-12">
+            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0">
+                <CardBody>
+                    <div className="w-full flex items-center justify-center">
+                        <Image
+                            alt="Imagen del proyecto 1 - Sistema interno de DISAM"
+                            className="object-cover rounded-xl "
+                            src={proyecto1}
+                        />
+                    </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
                     <p className="text-justify">
                         Este proyecto lo realice en mis proecticas profecionales para la Direccion de salud ambiental, 
@@ -38,21 +40,23 @@ export default function Proyects() {
                         </Tooltip>
                    </div>
 
-                   <div className="col-span-2 float-right">
-                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                   <div className="col-span-2 ">
+                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl float-right" aria-label="GitHub">
                             <BiLogoGithub />
                         </Button>
                     </div>
                 </CardFooter>
             </Card>
 
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards">
-                <CardBody className="overflow-visible py-2">
-                    <Image
-                        alt="Card background"
-                        className="object-cover rounded-xl"
-                        src={proyecto1}
-                    />
+            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0">
+                <CardBody>
+                    <div className="w-full flex items-center justify-center">
+                        <Image
+                            alt="Imagen del proyecto 1 - Sistema interno de DISAM"
+                            className="object-cover rounded-xl "
+                            src={proyecto1}
+                        />
+                    </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
                     <p className="text-justify">
                         Este proyecto lo realice en mis proecticas profecionales para la Direccion de salud ambiental, 
@@ -72,21 +76,23 @@ export default function Proyects() {
                         </Tooltip>
                    </div>
 
-                   <div className="col-span-2 float-right">
-                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                   <div className="col-span-2 ">
+                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl float-right" aria-label="GitHub">
                             <BiLogoGithub />
                         </Button>
                     </div>
                 </CardFooter>
             </Card>
 
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards">
-                <CardBody className="overflow-visible py-2">
-                    <Image
-                        alt="Card background"
-                        className="object-cover rounded-xl"
-                        src={proyecto1}
-                    />
+            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0">
+                <CardBody>
+                    <div className="w-full flex items-center justify-center">
+                        <Image
+                            alt="Imagen del proyecto 1 - Sistema interno de DISAM"
+                            className="object-cover rounded-xl "
+                            src={proyecto1}
+                        />
+                    </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
                     <p className="text-justify">
                         Este proyecto lo realice en mis proecticas profecionales para la Direccion de salud ambiental, 
@@ -106,8 +112,8 @@ export default function Proyects() {
                         </Tooltip>
                    </div>
 
-                   <div className="col-span-2 float-right">
-                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                   <div className="col-span-2 ">
+                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl float-right" aria-label="GitHub">
                             <BiLogoGithub />
                         </Button>
                     </div>
