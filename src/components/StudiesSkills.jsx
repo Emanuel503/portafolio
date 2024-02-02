@@ -5,14 +5,14 @@ import { GiDiploma } from "react-icons/gi";
 
 export default function StudiesSkills() {
   return (
-    <section className="pt-40 mx-10 lg:mx-20 xl:mx-64 h-screen" id="studies-skills">
+    <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="studies-skills">
         <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Estudios y Habilidades</h1>
 
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-12 gap-x-6">
 
-          <div className="col-span-12 md:col-span-6">
+          <div className="col-span-12 lg:col-span-6 flex flex-col items-center justify-center mb-5">
             <ul className="list-none list-outside text-colormind-text">
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5">
+              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
                   <div className="flex items-center ml-3">
                       <FaUniversity className="inline mr-4 text-2xl"/> 
                       <h3 className="inline text-2xl">Técnico en ingeniería en computación.</h3>
@@ -20,7 +20,7 @@ export default function StudiesSkills() {
                   <p className="indent-16 underline text-base">Universidad Don Bosco</p>
               </li>
 
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5">
+              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
                   <div className="flex items-center ml-3">
                       <FaSchoolFlag className="inline mr-4 text-2xl"/> 
                       <h3 className="inline text-2xl">Técnico en desarrollo de software.</h3>
@@ -28,7 +28,7 @@ export default function StudiesSkills() {
                   <p className="indent-16 underline text-base">Colegio El Espíritu Santo</p>
               </li>
               
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5">
+              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
                   <div className="flex items-center ml-3">
                       <GiDiploma className="inline mr-4 text-2xl"/> 
                       <h3 className="inline text-2xl">Curos de MERN</h3>
@@ -36,7 +36,7 @@ export default function StudiesSkills() {
                   <p className="indent-16 underline text-base">Udemy</p>
               </li>
 
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5">
+              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
                   <div className="flex items-center ml-3">
                       <GiDiploma className="inline mr-4 text-2xl"/> 
                       <h3 className="inline text-2xl">Curso en CCNA Routing and Switching</h3>
@@ -44,7 +44,7 @@ export default function StudiesSkills() {
                   <p className="indent-16 underline text-base">Cisco Systems</p>
               </li>
 
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5">
+              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
                   <div className="flex items-center ml-3">
                       <GiDiploma className="inline mr-4 text-2xl"/> 
                       <h3 className="inline text-2xl">Curso de It Essentials</h3>
@@ -66,7 +66,7 @@ export default function StudiesSkills() {
                 }}
                 label="HTML"
                 value={90}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
               <Progress
@@ -81,7 +81,7 @@ export default function StudiesSkills() {
                 }}
                 label="CSS"
                 value={50}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
               <Progress
@@ -96,7 +96,7 @@ export default function StudiesSkills() {
                 }}
                 label="JavaScript"
                 value={60}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
               <Progress
@@ -111,7 +111,7 @@ export default function StudiesSkills() {
                 }}
                 label="PHP"
                 value={70}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
               <Progress
@@ -126,7 +126,7 @@ export default function StudiesSkills() {
                 }}
                 label="Laravel"
                 value={80}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
             <Progress
@@ -141,7 +141,7 @@ export default function StudiesSkills() {
                 }}
                 label="NodeJS"
                 value={40}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
               <Progress
@@ -156,7 +156,7 @@ export default function StudiesSkills() {
                 }}
                 label="React"
                 value={40}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
               <Progress
@@ -171,7 +171,7 @@ export default function StudiesSkills() {
                 }}
                 label="MySQL"
                 value={70}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
 
             <Progress
@@ -186,7 +186,7 @@ export default function StudiesSkills() {
                 }}
                 label="PostgreSQL"
                 value={70}
-                className="mb-4"
+                className="mb-4 hover:translate-x-5 transition-transform"
               />
           </div>
         </div>

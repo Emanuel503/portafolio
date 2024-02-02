@@ -12,7 +12,7 @@ export default function Proyects() {
         <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Proyectos</h1>
 
         <div className="md:grid gap-12 grid-cols-12">
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0">
+            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image
@@ -48,7 +48,7 @@ export default function Proyects() {
                 </CardFooter>
             </Card>
 
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0">
+            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image
@@ -84,7 +84,7 @@ export default function Proyects() {
                 </CardFooter>
             </Card>
 
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0">
+            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image

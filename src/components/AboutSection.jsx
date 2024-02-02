@@ -4,14 +4,14 @@ import { BiCodeAlt, BiCode, BiSolidCommentDetail  } from "react-icons/bi";
 
 export default function AboutSection() {
   return (
-    <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="about">
+    <section className="pt-40 mx-10 lg:mx-20 xl:mx-64 " id="about">
         <Image
             isBlurred
             shadow="sm"
             radius="lg"
             width="100%"
             alt="Foto de Emanuel Molina"
-            className="w-full object-cover h-[350px] mb-10"
+            className="w-full object-cover h-[350px] mb-10 hover:scale-105"
             src={imagen}
         />
 
