@@ -12,20 +12,24 @@ export default function App() {
   
   const [modo, setmodo] = useState(true)
 
-  const [scroll, setScroll] = useState(window.scrollY)
+  const [section, setSection] = useState()
 
   const chageModo = () => {
     setmodo(!modo)
   }
 
-  window.addEventListener("scroll", function() {
-    setScroll(window.scrollY);
-  });
+  const bajar = (e, type) => {
+    let currentSection = document.querySelector("section:target") || document.querySelector("section:first-of-type");
+    let nextSection;
+    
+    if(type == 'down'){
+      nextSection = currentSection.nextElementSibling || document.querySelector("section:first-of-type");
+    }else{
+      nextSection = currentSection.previousElementSibling || document.querySelector("section:last-of-type")
+    }
 
-  const bajar = () => {
-    var currentSection = document.querySelector("section:target") || document.querySelector("section:first-of-type");
-    var nextSection = currentSection.nextElementSibling || document.querySelector("section:first-of-type");
-
+    setSection(nextSection.id)
+    window.location.href = `#${nextSection.id}`
     nextSection.scrollIntoView({ behavior: "smooth" });
   }
 
@@ -35,10 +39,12 @@ export default function App() {
         chageModo={chageModo}
         modo={modo}
       />
-
-      <Button className="rounded-full fixed right-0 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => bajar(e)} isIconOnly aria-label="Bajar">
-        <FaArrowDown />
-      </Button> 
+      
+      {section !== 'contact' && 
+        <Button className="rounded-full fixed right-0 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => bajar(e, 'down')} isIconOnly aria-label="Bajar">
+          <FaArrowDown />
+        </Button> 
+      }
 
       <AboutSection/>
 
@@ -48,8 +54,8 @@ export default function App() {
 
       <Contact/>
 
-      {scroll > 10 && 
-        <Button className="rounded-full fixed right-0 bottom-0 m-8 z-20 bg-colormind-button animate-bounce" isIconOnly aria-label="Bajar">
+      {section !== 'about' && 
+        <Button className="rounded-full fixed right-0 bottom-0 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => bajar(e, 'up')} isIconOnly aria-label="Bajar">
           <FaArrowUp />
         </Button>
       }
