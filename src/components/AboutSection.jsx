@@ -1,5 +1,5 @@
 import imagen from '../assets/foto.jpg';
-import { Image, Button } from "@nextui-org/react";
+import { Link, Image, Button } from "@nextui-org/react";
 import { BiCodeAlt, BiCode, BiSolidCommentDetail  } from "react-icons/bi";
 
 export default function AboutSection() {
@@ -25,7 +25,7 @@ export default function AboutSection() {
                 </p>
             </div>
             <div className='col-span-12 mt-10 md:mt-0 md:col-span-6 flex items-center justify-center'>
-                <Button size='lg' href='#contact' className="bg-colormind-button text-colormind-text font-semibold" aria-label="Contactame">
+                <Button size='lg' href='#contact' as={Link} className="bg-colormind-button text-colormind-text font-semibold" aria-label="Contactame">
                     <BiSolidCommentDetail /> Contactar
                 </Button> 
             </div>
