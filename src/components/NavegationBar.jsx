@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { BiSolidMoon, BiSolidSun, BiSolidCommentDots, BiCodeBlock, BiSolidGraduation, BiSolidHappy  } from "react-icons/bi";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
 
-export default function BarraBusqueda({chageModo, modo}) {
+export default function NavegationBar({chageModo, modo}) {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -103,7 +103,7 @@ export default function BarraBusqueda({chageModo, modo}) {
   );
 }
 
-BarraBusqueda.propTypes = {
+NavegationBar.propTypes = {
   chageModo: PropTypes.func.isRequired,
   modo: PropTypes.bool.isRequired
 }
