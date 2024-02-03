@@ -31,7 +31,7 @@ export default {
           'colormind-title': '#111111',
           'colormind-background': '#272727',
           'colormind-cards' : '#121212',
-          'colormind-navmobile': '#D8D8D8',
+          'colormind-navmobile': '#3D3D3D',
           'colormind-text': '#e6e6e6',
           'colormind-button': '#1a4a5a',
           'colormind-hover': '#c6c9ce',

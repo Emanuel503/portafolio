@@ -1,4 +1,3 @@
-import { useState } from "react";
 import BarraBusqueda from './components/NavegationBar'
 import AboutSection from "./components/AboutSection";
 import Proyects from "./components/Proyects";
@@ -9,31 +8,23 @@ import Arrows from "./components/Arrows";
 
 export default function App() {
   
-  const [modo, setmodo] = useState(true)
-
-  const chageModo = () => {
-    setmodo(!modo)
-  }
-
   return (
-    <main className={modo ? 'dark bg-colormind-background': 'light bg-colormind-background '}>
-      <BarraBusqueda 
-        chageModo={chageModo}
-        modo={modo}
-      />
+    <>
+      <BarraBusqueda />
       
-      <AboutSection/>
+      <main >
+        <AboutSection/>
 
-      <Proyects/>
+        <Proyects/>
 
-      <StudiesSkills/>
+        <StudiesSkills/>
 
-      <Contact/>
+        <Contact/>
+      </main>
 
       <Arrows/>
 
       <LateralContacs/>
-
-    </main>
+    </>
   );
 }

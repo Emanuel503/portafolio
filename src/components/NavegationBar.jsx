@@ -1,11 +1,21 @@
 import { useState } from "react";
-import PropTypes from 'prop-types'
 import { BiSolidMoon, BiSolidSun, BiSolidCommentDots, BiCodeBlock, BiSolidGraduation, BiSolidHappy  } from "react-icons/bi";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
 
-export default function NavegationBar({chageModo, modo}) {
+export default function NavegationBar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const [mode, setMode] = useState(true)
+
+  const chageModo = () => {
+    setMode(!mode)
+    if(mode){
+      document.body.classList.remove('dark')
+    }else{
+      document.body.classList.add('dark')
+    }
+  }
 
   const closeNavBarMobile = () => {
     setIsMenuOpen(false)
@@ -49,7 +59,7 @@ export default function NavegationBar({chageModo, modo}) {
         <NavbarContent justify="end">
           <NavbarItem>
             <Button className="text-2xl" isIconOnly variant="shadow" onClick={ () => chageModo() }>
-              { modo ? <BiSolidSun /> : <BiSolidMoon /> }
+              { mode ? <BiSolidSun /> : <BiSolidMoon /> }
             </Button>
           </NavbarItem>
         </NavbarContent>
@@ -91,7 +101,7 @@ export default function NavegationBar({chageModo, modo}) {
             <NavbarMenuItem >
               <Link
                 className="text-colormind-text w-full font-bold border-b-1 p-1.5 mb-2 border-colormind-text hover:bg-colormind-hover hover:translate-x-2 transition duration-1000"
-                href="#studies"
+                href="#contact"
                 size="lg"
                 onClick={() => closeNavBarMobile()}
               >
@@ -101,9 +111,4 @@ export default function NavegationBar({chageModo, modo}) {
         </NavbarMenu>
     </Navbar>
   );
-}
-
-NavegationBar.propTypes = {
-  chageModo: PropTypes.func.isRequired,
-  modo: PropTypes.bool.isRequired
 }
