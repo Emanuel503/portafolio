@@ -22,7 +22,7 @@ export default {
           'colormind-text': '#111111',
           'colormind-button': '#efbc75',
           'colormind-hover': '#c6c9ce',
-          'colormind-primary': '#0e2c40',
+          'colormind-primary': '#e6e6e6',
           'colormind-secondary': '#148f8f',
         },
       },
