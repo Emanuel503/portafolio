@@ -6,7 +6,7 @@ export default function NavegationBar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const [mode, setMode] = useState(true)
+  const [mode, setMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
 
   const chageModo = () => {
     setMode(!mode)

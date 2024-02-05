@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Emanuel</title>
   </head>
-  <body class="dark bg-colormind-background">
+  <body class="bg-colormind-background">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+
+  <script>
+      const modo = window.matchMedia('(prefers-color-scheme: dark)').matches
+      if(modo) document.body.classList.add('dark') 
+  </script>
 </html>
