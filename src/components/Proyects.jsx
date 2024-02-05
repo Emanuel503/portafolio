@@ -1,9 +1,11 @@
-import {Button, Card, CardBody, CardFooter, Image, Tooltip, Chip} from "@nextui-org/react";
+import {Button, Card, CardBody, CardFooter, Image, Tooltip, Chip, Link} from "@nextui-org/react";
 import proyecto1 from "../assets/proyects/proyecto1.jpg"
 import { BiLogoGithub  } from "react-icons/bi";
 import { FaLaravel } from "react-icons/fa";
 import { MdOutlinePhp } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io";
+import { MdWebAsset } from "react-icons/md";
+
 
 export default function Proyects() {
 
@@ -23,27 +25,28 @@ export default function Proyects() {
                     </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
                     <p className="text-justify">
-                        Este proyecto lo realice en mis proecticas profecionales para la Direccion de salud ambiental, 
-                        una insiticion de gobierno en el cual se necesitaba el poder llevar el registro y el control de usuarios, permisos laborales, reservacioes de salas de reuniones, eventos de la insticion, registro y control de vehiculos, entre muchos mas funciones. 
+                        Este proyecto lo realicé en mis prácticas profesionales para la Dirección de salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
-                   <div className="col-span-10">
-                        <Tooltip showArrow={true} content="Laravel 9">
+                   <div className="col-span-6">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 9">
                             <Chip className="mr-1 text-lg"><FaLaravel/> </Chip>
                         </Tooltip>
-                        <Tooltip showArrow={true} content="JavaScript">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="JavaScript">
                             <Chip className="mr-1 text-lg"><IoLogoJavascript/> </Chip>
                         </Tooltip>
-                        <Tooltip showArrow={true} content="PHP 8.0">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="PHP 8.0">
                             <Chip className="mr-1 text-lg"><MdOutlinePhp/> </Chip>
                         </Tooltip>
                    </div>
 
-                   <div className="col-span-2 ">
-                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl float-right" aria-label="GitHub">
-                            <BiLogoGithub />
-                        </Button>
+                   <div className="col-span-6 text-right">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Repositorio">
+                            <Button href='https://github.com/Emanuel503/sistema_disam.git' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                                <BiLogoGithub />
+                            </Button>
+                        </Tooltip>
                     </div>
                 </CardFooter>
             </Card>
@@ -59,27 +62,34 @@ export default function Proyects() {
                     </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
                     <p className="text-justify">
-                        Este proyecto lo realice en mis proecticas profecionales para la Direccion de salud ambiental, 
-                        una insiticion de gobierno en el cual se necesitaba el poder llevar el registro y el control de usuarios, permisos laborales, reservacioes de salas de reuniones, eventos de la insticion, registro y control de vehiculos, entre muchos mas funciones. 
+                    Este proyecto lo realicé en mis prácticas profesionales para la Dirección de salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
-                   <div className="col-span-10">
-                        <Tooltip showArrow={true} content="Laravel 9">
+                   <div className="col-span-6">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 9">
                             <Chip className="mr-1 text-lg"><FaLaravel/> </Chip>
                         </Tooltip>
-                        <Tooltip showArrow={true} content="JavaScript">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="JavaScript">
                             <Chip className="mr-1 text-lg"><IoLogoJavascript/> </Chip>
                         </Tooltip>
-                        <Tooltip showArrow={true} content="PHP 8.0">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="PHP 8.0">
                             <Chip className="mr-1 text-lg"><MdOutlinePhp/> </Chip>
                         </Tooltip>
                    </div>
 
-                   <div className="col-span-2 ">
-                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl float-right" aria-label="GitHub">
-                            <BiLogoGithub />
-                        </Button>
+                   <div className="col-span-6 text-right">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Web">
+                            <Button href='https://github.com/Emanuel503/sistema_disam.git' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl mr-2" aria-label="GitHub">
+                                <MdWebAsset  />
+                            </Button>
+                        </Tooltip>
+
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Repositorio">
+                            <Button href='https://github.com/Emanuel503/sistema_disam.git' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                                <BiLogoGithub />
+                            </Button>
+                        </Tooltip>
                     </div>
                 </CardFooter>
             </Card>
@@ -95,27 +105,34 @@ export default function Proyects() {
                     </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
                     <p className="text-justify">
-                        Este proyecto lo realice en mis proecticas profecionales para la Direccion de salud ambiental, 
-                        una insiticion de gobierno en el cual se necesitaba el poder llevar el registro y el control de usuarios, permisos laborales, reservacioes de salas de reuniones, eventos de la insticion, registro y control de vehiculos, entre muchos mas funciones. 
+                    Este proyecto lo realicé en mis prácticas profesionales para la Dirección de salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
-                   <div className="col-span-10">
-                        <Tooltip showArrow={true} content="Laravel 9">
+                   <div className="col-span-6">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 9">
                             <Chip className="mr-1 text-lg"><FaLaravel/> </Chip>
                         </Tooltip>
-                        <Tooltip showArrow={true} content="JavaScript">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="JavaScript">
                             <Chip className="mr-1 text-lg"><IoLogoJavascript/> </Chip>
                         </Tooltip>
-                        <Tooltip showArrow={true} content="PHP 8.0">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="PHP 8.0">
                             <Chip className="mr-1 text-lg"><MdOutlinePhp/> </Chip>
                         </Tooltip>
                    </div>
 
-                   <div className="col-span-2 ">
-                        <Button isIconOnly className="bg-colormind-button text-colormind-text text-2xl float-right" aria-label="GitHub">
-                            <BiLogoGithub />
-                        </Button>
+                   <div className="col-span-6 text-right">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Web">
+                            <Button href='https://github.com/Emanuel503/sistema_disam.git' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl mr-2" aria-label="GitHub">
+                                <MdWebAsset  />
+                            </Button>
+                        </Tooltip>
+
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Repositorio">
+                            <Button href='https://github.com/Emanuel503/sistema_disam.git' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                                <BiLogoGithub />
+                            </Button>
+                        </Tooltip>
                     </div>
                 </CardFooter>
             </Card>
