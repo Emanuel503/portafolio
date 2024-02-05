@@ -20,12 +20,12 @@ export default function AboutSection() {
                 <h2 className="text-colormind-text text-5xl font-extrabold mb-2">Emanuel José Molina Zúniga</h2>
                 <h3 className='text-colormind-text text-3xl mb-6'><BiCode className='inline' /> Programador Web <BiCodeAlt className='inline'/></h3>
                 <p className='text-colormind-text text-md'>
-                    Soy Emanuel un programador web, me dedico a programar sitios y sistemas web con la mejor 
-                    experiencia de usuarios. Con PHP, JavaScript, Laravel, NodeJs o React.
+                    Soy Emanuel un programador web. Me dedico a programar sitios y sistemas web. Con tecnologías como PHP, JavaScript, Laravel, NodeJs, NextUI, Bootstrap o React.
                 </p>
+                <Button className="mt-5 hover:scale-110" href='https://mega.nz/file/xc0wHaIR#2Y4kvYY6mzN26uhwsNT-zsdTk1IzyttdG1xGgIJyjd8' target='_blank' as={Link}>Descargar CV</Button>
             </div>
             <div className='col-span-12 mt-10 md:mt-0 md:col-span-6 flex items-center justify-center'>
-                <Button size='lg' href='#contact' as={Link} className="bg-colormind-button text-colormind-text font-semibold" aria-label="Contactame">
+                <Button size='lg' href='#contact' as={Link} className="bg-colormind-button text-colormind-text font-semibold hover:scale-110" aria-label="Contactame">
                     <BiSolidCommentDetail /> Contactar
                 </Button> 
             </div>
