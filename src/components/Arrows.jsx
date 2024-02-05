@@ -1,5 +1,5 @@
 import { FaArrowDown, FaArrowUp  } from "react-icons/fa";
-import { Button } from "@nextui-org/react";
+import { Button, Tooltip } from "@nextui-org/react";
 import { useState } from "react";
 
 export default function Arrows() {
@@ -24,15 +24,19 @@ export default function Arrows() {
     return (
         <>
             {section !== 'contact' && 
-                <Button className="rounded-full fixed right-0 top-16 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => changeSection(e, 'down')} isIconOnly aria-label="Bajar">
-                    <FaArrowDown />
-                </Button> 
+                <Tooltip delay={0} placement="bottom" className="text-colormind-text bg-colormind-primary" showArrow={true} content="Bajar">
+                    <Button className="rounded-full fixed right-0 top-16 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => changeSection(e, 'down')} isIconOnly aria-label="Bajar">
+                        <FaArrowDown />
+                    </Button> 
+                </Tooltip>
             }
 
-            {section !== 'about' && 
-                <Button className="rounded-full fixed right-0 bottom-0 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => changeSection(e, 'up')} isIconOnly aria-label="Bajar">
-                    <FaArrowUp />
-                </Button>
+            {section !== 'about' &&
+                <Tooltip delay={0} placement="bottom" className="text-colormind-text bg-colormind-primary" showArrow={true} content="Subir">
+                    <Button className="rounded-full fixed right-0 bottom-0 m-8 z-20 bg-colormind-button animate-bounce" onClick={(e) => changeSection(e, 'up')} isIconOnly aria-label="Subir">
+                        <FaArrowUp />
+                    </Button>
+                </Tooltip>
             }
         </>
     )
