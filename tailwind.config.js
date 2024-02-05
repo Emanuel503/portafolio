@@ -15,15 +15,15 @@ export default {
     themes: {
       light: {
         colors: {
-          'colormind-title': '#148d8d',
+          'colormind-title': '#A3DACA',
           'colormind-background': '#e6e6e6',
           'colormind-cards' : '#ffffff',
           'colormind-navmobile':'#D8D8D8',
           'colormind-text': '#111111',
           'colormind-button': '#efbc75',
-          'colormind-hover': '#c6c9ce',
           'colormind-primary': '#e6e6e6',
-          'colormind-secondary': '#148f8f',
+          'colormind-lateral-bar': '#1a4a5a',
+          'colormind-lateral-icon': '#efbc75',
         },
       },
       dark: {
@@ -34,12 +34,11 @@ export default {
           'colormind-navmobile': '#3D3D3D',
           'colormind-text': '#e6e6e6',
           'colormind-button': '#1a4a5a',
-          'colormind-hover': '#c6c9ce',
           'colormind-primary': '#0e2c40',
-          'colormind-secondary': '#c1e1a7',
+          'colormind-lateral-bar': '#c1e1a7',
+          'colormind-lateral-icon': '#1a4a5a',
         },
       },
     },
   })],
 }
-
