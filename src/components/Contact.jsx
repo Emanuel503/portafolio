@@ -11,7 +11,6 @@ export default function Contact() {
             <div className="col-span-12 lg:col-span-4 flex flex-col justify-center items-center lg:items-start mb-10 lg:mb-0">
                 <h2 className="text-5xl font-bold mb-8">Escríbeme</h2>
                 <div>
-                  <label className="font-semibold">Email: </label>
                   <Tooltip placement="top" className="text-colormind-text bg-colormind-primary" showArrow={true} content="Enviar Email">
                     <a className="text-lg hover:underline underline-offset-2 transition-all" href="mailto:emanueljosemolina@gmail.com">emanueljosemolina@gmail.com</a>
                   </Tooltip>
