@@ -1,5 +1,5 @@
 import {Button, Card, CardBody, CardFooter, Image, Tooltip, Chip, Link} from "@nextui-org/react";
-import proyecto1 from "../assets/proyects/proyecto1.jpg"
+import proyecto1 from "../assets/proyects/proyecto1.gif"
 import { BiLogoGithub  } from "react-icons/bi";
 import { FaLaravel } from "react-icons/fa";
 import { MdOutlinePhp } from "react-icons/md";
@@ -23,9 +23,9 @@ export default function Proyects() {
                             src={proyecto1}
                         />
                     </div>
-                    <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno DISAM</h3>
+                    <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno de la DISAM</h3>
                     <p className="text-justify">
-                        Este proyecto lo realicé en mis prácticas profesionales para la Dirección de salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
+                        Este proyecto lo realicé en mis prácticas profesionales para la Dirección de Salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
