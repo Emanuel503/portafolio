@@ -2,6 +2,7 @@ import {Button, Card, CardBody, CardFooter, Image, Tooltip, Chip, Link} from "@n
 import proyecto1 from "../assets/proyects/proyecto1.gif"
 import proyecto2 from "../assets/proyects/proyecto2.gif"
 import proyecto3 from "../assets/proyects/proyecto3.gif"
+import proyecto4 from "../assets/proyects/proyecto4.gif"
 import { BiLogoGithub  } from "react-icons/bi";
 import { FaLaravel } from "react-icons/fa";
 import { MdOutlinePhp } from "react-icons/md";
@@ -9,8 +10,9 @@ import { IoLogoJavascript } from "react-icons/io";
 import { MdWebAsset } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiPostman, SiSwagger, SiTailwindcss } from "react-icons/si";
+import { SiInertia, SiPostman, SiSwagger, SiTailwindcss } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
+import { DiPostgresql } from "react-icons/di";
 
 export default function Proyects() {
 
@@ -154,6 +156,53 @@ export default function Proyects() {
 
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Repositorio">
                             <Button href='https://github.com/Emanuel503/to-do-list-api' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
+                                <BiLogoGithub />
+                            </Button>
+                        </Tooltip>
+                    </div>
+                </CardFooter>
+            </Card>
+
+            {/* Proyecto 4: sistema de ticket  */}
+            <Card className="col-span-12 md:col-span-6 lg:col-span-6 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
+                <CardBody>
+                    <div className="w-full flex items-center justify-center">
+                        <Image
+                            alt="Imagen del proyecto 4 - Sistema de Gestión de Tickets"
+                            className="object-cover rounded-xl "
+                            src={proyecto4}
+                        />
+                    </div>
+                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Sistema de Gestión de Tickets</h3>
+                    <p className="text-justify">
+                        Desarrollé un sistema de gestión de tickets utilizando Laravel, Inertia.js y React, con el objetivo de optimizar el proceso de reporte, seguimiento y resolución de incidencias dentro del área de desarrollo de mi lugar de trabajo.
+                        <br/><br/>
+                        La plataforma permite la administración de usuarios, roles y permisos, así como la gestión de establecimientos y el control de los accesos de los usuarios a cada uno de ellos. Además, incorpora un completo módulo para la gestión de casos, donde es posible crear, asignar, dar seguimiento y documentar cada ticket durante todo su ciclo de vida.
+                        <br/><br/>
+                        Para mejorar la experiencia de uso, implementé WebSockets para actualizar en tiempo real el estado de los casos y los comentarios, evitando la necesidad de recargar la página. También integré notificaciones del navegador, permitiendo informar a los usuarios de manera inmediata sobre nuevos casos, asignaciones o actualizaciones relevantes.
+                        <br/><br/>
+                        El sistema incluye un módulo de auditoría que registra las acciones realizadas por los usuarios, proporcionando trazabilidad y facilitando el seguimiento de los cambios efectuados dentro de la plataforma.
+                    </p>
+                </CardBody>
+                <CardFooter className="text-small grid grid-cols-12">
+                   <div className="col-span-6">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 11">
+                            <Chip className="m-1 text-lg"><FaLaravel/> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="IntertiaJs">
+                            <Chip className="m-1 text-lg"><SiInertia/> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="React">
+                            <Chip className="m-1 text-lg"><FaReact /> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="PostgresSQL">
+                            <Chip className="m-1 text-lg"><DiPostgresql/> </Chip>
+                        </Tooltip>
+                   </div>
+
+                   <div className="col-span-6 text-right">
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Repositorio">
+                            <Button href='https://github.com/Emanuel503/sistema-ticket' target="_blank" as={Link} isIconOnly className="bg-colormind-button text-colormind-text text-2xl" aria-label="GitHub">
                                 <BiLogoGithub />
                             </Button>
                         </Tooltip>
