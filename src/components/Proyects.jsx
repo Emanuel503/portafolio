@@ -142,7 +142,7 @@ export default function Proyects() {
                 <CardFooter className="text-small grid grid-cols-12">
                    <div className="col-span-6">
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 11">
-                            <Chip className=" text-lg"><FaLaravel/> </Chip>
+                            <Chip className="m-1 text-lg"><FaLaravel/> </Chip>
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Swagger">
                             <Chip className="m-1 text-lg"><SiSwagger /> </Chip>
