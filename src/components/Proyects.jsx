@@ -10,6 +10,7 @@ import { MdWebAsset } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPostman, SiSwagger, SiTailwindcss } from "react-icons/si";
+import { BsBootstrap } from "react-icons/bs";
 
 export default function Proyects() {
 
@@ -45,6 +46,9 @@ export default function Proyects() {
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="PHP 8.0">
                             <Chip className="m-1 text-lg"><MdOutlinePhp/> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Bootstrap">
+                            <Chip className="m-1 text-lg"><BsBootstrap/> </Chip>
                         </Tooltip>
                    </div>
 
