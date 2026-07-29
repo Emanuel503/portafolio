@@ -1,6 +1,7 @@
 import imagen from '../assets/foto.jpg';
 import { Link, Image, Button } from "@nextui-org/react";
 import { BiCodeAlt, BiCode, BiSolidCommentDetail  } from "react-icons/bi";
+import cvPdf from '../assets/pdf/CV-Emanuel Molina.pdf';
 
 export default function AboutSection() {
   return (
@@ -18,14 +19,18 @@ export default function AboutSection() {
         <div className="grid grid-cols-12">
             <div className="col-span-12 md:col-span-6">
                 <h2 className="text-colormind-text text-5xl font-extrabold mb-2">Emanuel José Molina Zúniga</h2>
-                <h3 className='text-colormind-text text-3xl mb-6'><BiCode className='inline' /> Programador Web <BiCodeAlt className='inline'/></h3>
+                <h3 className='text-colormind-text text-3xl mb-6'><BiCode className='inline' /> Desarrollador de software <BiCodeAlt className='inline'/></h3>
                 <p className='text-colormind-text text-md'>
-                    Soy Emanuel un programador web. Me dedico a programar sitios y sistemas web. Con tecnologías como PHP, JavaScript, Laravel, NodeJs, NextUI, Bootstrap o React.
+                    Desarrollador de software comprometido con la creación de soluciones 
+                    innovadoras, aplicando buenas prácticas de desarrollo para garantizar 
+                    productos de alta calidad. Orientado al aprendizaje continuo, la mejora 
+                    constante y el crecimiento profesional, con el objetivo de aportar valor a los 
+                    proyectos y contribuir al logro de los objetivos de la organización.
                 </p>
-                <Button className="mt-5 hover:scale-110" href='https://mega.nz/file/xc0wHaIR#2Y4kvYY6mzN26uhwsNT-zsdTk1IzyttdG1xGgIJyjd8' target='_blank' as={Link}>Descargar CV</Button>
+                <Button color='success' className="mt-5 hover:scale-110 text-xl" href={cvPdf} target='_blank' as={Link}>Descargar CV</Button>
             </div>
             <div className='col-span-12 mt-10 md:mt-0 md:col-span-6 flex items-center justify-center'>
-                <Button size='lg' href='#contact' as={Link} className="bg-colormind-button text-colormind-text font-semibold hover:scale-110" aria-label="Contactame">
+                <Button size='lg' href='#contact' as={Link} className="bg-colormind-button text-colormind-text font-semibold hover:scale-110 text-xl" aria-label="Contactame">
                     <BiSolidCommentDetail /> Contactar
                 </Button> 
             </div>
