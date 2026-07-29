@@ -1,197 +1,58 @@
-import { Progress } from "@nextui-org/react";
 import { FaUniversity } from "react-icons/fa";
 import { FaSchoolFlag } from "react-icons/fa6";
 import { GiDiploma } from "react-icons/gi";
+import CardStudy from "./CardStudy";
 
 export default function StudiesSkills() {
-  
-  // TODO separar estudios agregar una descrpcion mas amplia, agregar seccion de habilidades o tecnologias con las que he trabajado
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="studies-skills">
-        <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Estudios y Habilidades</h1>
+      <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">
+        Estudios
+      </h1>
 
-        <div className="grid grid-cols-12 gap-x-6">
+      <div className="grid grid-cols-12 gap-x-6">
+        <CardStudy
+          nombre="Curso de Ingles Intermedio."
+          lugar="English4Callcenters"
+          fecha="Ene 2025 - Dic 2025"
+          icono={GiDiploma}
+        />
 
-          <div className="col-span-12 lg:col-span-6 flex flex-col items-center justify-center mb-5">
-            <ul className="list-none list-outside text-colormind-text">
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
-                  <div className="flex items-center ml-3">
-                      <FaUniversity className="inline mr-4 text-2xl"/> 
-                      <h3 className="inline text-2xl">Técnico en ingeniería en computación.</h3>
-                  </div>
-                  <p className="indent-16 underline text-base">Universidad Don Bosco</p>
-              </li>
+        <CardStudy
+          nombre="Técnico en ingeniería en computación."
+          lugar="Universidad Don Bosco"
+          fecha="Ene 2021 - Jun 2023"
+          icono={FaUniversity}
+        />
 
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
-                  <div className="flex items-center ml-3">
-                      <FaSchoolFlag className="inline mr-4 text-2xl"/> 
-                      <h3 className="inline text-2xl">Técnico en desarrollo de software.</h3>
-                  </div>
-                  <p className="indent-16 underline text-base">Colegio El Espíritu Santo</p>
-              </li>
-              
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
-                  <div className="flex items-center ml-3">
-                      <GiDiploma className="inline mr-4 text-2xl"/> 
-                      <h3 className="inline text-2xl">Curos de MERN</h3>
-                  </div>
-                  <p className="indent-16 underline text-base">Udemy</p>
-              </li>
+        <CardStudy
+          nombre="Curso de MERN"
+          lugar="Udemy"
+          fecha="Ene 2020 - Nov 2020"
+          icono={GiDiploma}
+        />
 
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
-                  <div className="flex items-center ml-3">
-                      <GiDiploma className="inline mr-4 text-2xl"/> 
-                      <h3 className="inline text-2xl">Curso en CCNA Routing and Switching</h3>
-                  </div>
-                  <p className="indent-16 underline text-base">Cisco Systems</p>
-              </li>
+        <CardStudy
+          nombre="Técnico en desarrollo de software."
+          lugar="Colegio El Espíritu Santo"
+          fecha="Ene 2018 - Nov 2020"
+          icono={FaSchoolFlag}
+        />
 
-              <li className="bg-colormind-cards px-3 py-4 rounded-2xl mb-5 hover:translate-x-5 transition-transform">
-                  <div className="flex items-center ml-3">
-                      <GiDiploma className="inline mr-4 text-2xl"/> 
-                      <h3 className="inline text-2xl">Curso de It Essentials</h3>
-                  </div>
-                  <p className="indent-16 underline text-base">Cisco Systems</p>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-12 lg:col-span-6 flex flex-col items-center justify-center">
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="HTML"
-                value={90}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
+        <CardStudy
+          nombre="Curso en CCNA Routing and Switching"
+          lugar="Cisco Systems"
+          fecha="Ene 2020 - Nov 2020"
+          icono={GiDiploma}
+        />
 
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="CSS"
-                value={50}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="JavaScript"
-                value={60}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="PHP"
-                value={70}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="Laravel"
-                value={80}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-            <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="NodeJS"
-                value={40}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="React"
-                value={40}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-              <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="MySQL"
-                value={70}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-
-            <Progress
-                size="md"
-                radius="sm"
-                classNames={{
-                  base: "max-w-md",
-                  track: "drop-shadow-md border border-default",
-                  indicator: "bg-gradient-to-r from-pink-500 to-yellow-500",
-                  label: "tracking-wider font-medium text-default-600",
-                  value: "text-foreground/60",
-                }}
-                label="PostgreSQL"
-                value={70}
-                className="mb-4 hover:translate-x-5 transition-transform"
-              />
-          </div>
-        </div>
+        <CardStudy
+          nombre="Curso de It Essentials"
+          lugar="Cisco Systems"
+          fecha="Ene 2019- Nov 2019"
+          icono={GiDiploma}
+        />
+      </div>
     </section>
-  )
+  );
 }
