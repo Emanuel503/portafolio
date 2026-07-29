@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import LateralContacs from "./components/LateralContacs";
 import Arrows from "./components/Arrows";
 import Technologies from './components/Technologies';
+import WorksSection from './components/WorksSection';
 
 export default function App() {
   
@@ -22,7 +23,7 @@ export default function App() {
 
         <StudiesSkills/>
 
-        {/* TODO: agregar seccion de experiencia/trabajos */}
+        <WorksSection/>
 
         <Contact/>
       </main>
