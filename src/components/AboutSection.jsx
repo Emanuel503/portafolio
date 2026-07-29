@@ -27,7 +27,7 @@ export default function AboutSection() {
                     constante y el crecimiento profesional, con el objetivo de aportar valor a los 
                     proyectos y contribuir al logro de los objetivos de la organización.
                 </p>
-                <Button color='success' className="mt-5 hover:scale-110 text-xl" href={cvPdf} target='_blank' as={Link}>Descargar CV</Button>
+                <Button color='success' className="mt-5 hover:scale-110 text-xl font-semibold" href={cvPdf} target='_blank' as={Link}>Descargar CV</Button>
             </div>
             <div className='col-span-12 mt-10 md:mt-0 md:col-span-6 flex items-center justify-center'>
                 <Button size='lg' href='#contact' as={Link} className="bg-colormind-button text-colormind-text font-semibold hover:scale-110 text-xl" aria-label="Contactame">
