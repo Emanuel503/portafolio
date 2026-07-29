@@ -4,6 +4,8 @@ import { FaSchoolFlag } from "react-icons/fa6";
 import { GiDiploma } from "react-icons/gi";
 
 export default function StudiesSkills() {
+  
+  // TODO separar estudios agregar una descrpcion mas amplia, agregar seccion de habilidades o tecnologias con las que he trabajado
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="studies-skills">
         <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Estudios y Habilidades</h1>

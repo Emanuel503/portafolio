@@ -19,6 +19,8 @@ export default function App() {
 
         <StudiesSkills/>
 
+        {/* TODO: agregar seccion de experiencia/trabajos */}
+
         <Contact/>
       </main>
 

@@ -14,6 +14,8 @@ import { BsBootstrap } from "react-icons/bs";
 
 export default function Proyects() {
 
+  // TODO: agregar como minimo 3 proyectos mas 
+  
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="proyects">
         <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Proyectos</h1>
