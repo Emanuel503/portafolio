@@ -9,7 +9,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { MdWebAsset } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiPostman, SiSwagger } from "react-icons/si";
+import { SiPostman, SiSwagger, SiTailwindcss } from "react-icons/si";
 
 export default function Proyects() {
 
@@ -28,9 +28,11 @@ export default function Proyects() {
                             src={proyecto1}
                         />
                     </div>
-                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Sistema interno de la DISAM</h3>
+                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Sistema de Gestión Institucional</h3>
                     <p className="text-justify">
-                        Este proyecto lo realicé en mis prácticas profesionales para la Dirección de Salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
+                        Desarrollé un sistema web interno para la Dirección de Salud Ambiental, diseñado para digitalizar y optimizar la gestión de los procesos administrativos de la institución. La aplicación fue desarrollada con Laravel y Blade, e integra módulos para la administración de usuarios, empleados, roles y permisos, control de permisos laborales, gestión de vehículos institucionales, asignación y préstamo de equipos, registro de salidas de activos, administración de salas de reuniones, planificación de actividades y eventos, y control documental, entre otras funcionalidades.
+                        <br/><br/>
+                        El sistema permitió centralizar la información, mejorar el control de los recursos institucionales y agilizar los procesos administrativos, proporcionando una solución segura, organizada y fácil de utilizar para el personal de la institución.
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
@@ -61,14 +63,20 @@ export default function Proyects() {
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image
-                            alt="Imagen del proyecto 2 - Clon de página de Toyota"
+                            alt="Imagen del proyecto 2 - Clon de Sitio Web de Toyota"
                             className="object-cover rounded-xl "
                             src={proyecto2}
                         />
                     </div>
-                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Clon de página de Toyota</h3>
+                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Clon de Sitio Web de Toyota</h3>
                     <p className="text-justify">
-                        Este proyecto lo realicé para practicar mis habilidades con React utilizando el framework de Next, en el cual solo realice la parte de front de la página, cambiando algunos aspectos de la página, corrigiendo algunos errores cuando la página se adapta a los tamaños. Este clon de esta página solo se realizó con fines educativos, página original: <a className="underline" href="https://www.toyota.com/" rel="noreferrer" target="_blank"> https://www.toyota.com/</a> 
+                        Este proyecto fue desarrollado con fines educativos para fortalecer mis habilidades en el desarrollo de interfaces modernas utilizando Next.js, React y Tailwind CSS. Consiste en la recreación del frontend del sitio web de Toyota, prestando especial atención al diseño, la estructura de los componentes y la experiencia de usuario.
+                        <br/><br/>
+                        Durante el desarrollo, trabajé en la implementación de una interfaz completamente responsiva, realizando ajustes y correcciones para garantizar una correcta visualización en diferentes tamaños de pantalla. Además, optimicé diversos aspectos del diseño y la maquetación para lograr un resultado más fiel al sitio original.
+                        <br/><br/>
+                        Este proyecto se enfoca exclusivamente en el desarrollo del frontend y fue realizado únicamente con fines de aprendizaje y práctica. El sitio original pertenece a Toyota y puede consultarse en: 
+                        <br/><br/>
+                        <a className="underline" href="https://www.toyota.com/" rel="noreferrer" target="_blank"> https://www.toyota.com/</a> 
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
@@ -81,6 +89,9 @@ export default function Proyects() {
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Next JS 14">
                             <Chip className="m-1 text-lg"><TbBrandNextjs/> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="TailwindCSS">
+                            <Chip className="m-1 text-lg"><SiTailwindcss/> </Chip>
                         </Tooltip>
                    </div>
 
