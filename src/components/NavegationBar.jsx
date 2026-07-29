@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BiSolidMoon, BiSolidSun, BiSolidCommentDots, BiCodeBlock, BiSolidGraduation, BiSolidHappy  } from "react-icons/bi";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+import { RiCodeView } from "react-icons/ri";
 
 export default function NavegationBar() {
 
@@ -45,8 +46,13 @@ export default function NavegationBar() {
               </Link>
             </NavbarItem>
             <NavbarItem>
+              <Link className="text-colormind-text text-lg" aria-current="page" href="#technologies">
+                <RiCodeView className="mr-2" />Tecnologías
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
               <Link className="text-colormind-text text-lg" aria-current="page" href="#studies-skills">
-                <BiSolidGraduation className="mr-2" />Estudios/Habilidades
+                <BiSolidGraduation className="mr-2" />Estudios
               </Link>
             </NavbarItem>
             <NavbarItem>

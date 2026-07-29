@@ -5,6 +5,7 @@ import StudiesSkills from "./components/StudiesSkills";
 import Contact from "./components/Contact";
 import LateralContacs from "./components/LateralContacs";
 import Arrows from "./components/Arrows";
+import Technologies from './components/Technologies';
 
 export default function App() {
   
@@ -16,6 +17,8 @@ export default function App() {
         <AboutSection/>
 
         <Proyects/>
+
+        <Technologies/>
 
         <StudiesSkills/>
 
