@@ -10,7 +10,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { MdWebAsset } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiInertia, SiPostman, SiSwagger, SiTailwindcss } from "react-icons/si";
+import { SiInertia, SiMysql, SiPostman, SiSwagger, SiTailwindcss } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { DiPostgresql } from "react-icons/di";
 
@@ -53,6 +53,9 @@ export default function Proyects() {
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Bootstrap">
                             <Chip className="m-1 text-lg"><BsBootstrap/> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="MySQL">
+                            <Chip className="m-1 text-lg"><SiMysql/> </Chip>
                         </Tooltip>
                    </div>
 
@@ -131,7 +134,9 @@ export default function Proyects() {
                     </div>
                     <h3 className="font-semibold text-xl mb-6 text-justify my-2">API REST para Gestión de Tareas</h3>
                     <p className="text-justify">
-                    Desarrollé una API REST con Laravel para la administración de tareas, usuarios, roles y categorías. La aplicación permite crear, asignar y gestionar tareas, así como administrar permisos y la organización de la información mediante categorías. La API fue documentada utilizando Postman y Swagger (OpenAPI), incluyendo todos los endpoints, ejemplos de solicitudes y respuestas, autenticación, códigos de estado HTTP y una interfaz interactiva para realizar pruebas. Este proyecto refleja buenas prácticas en el diseño, desarrollo y documentación de servicios RESTful.
+                    Desarrollé una API REST con Laravel para la administración de tareas, usuarios, roles y categorías. La aplicación permite crear, asignar y gestionar tareas, así como administrar permisos y la organización de la información mediante categorías. 
+                    <br/><br/>
+                    La API fue documentada utilizando Postman y Swagger (OpenAPI), incluyendo todos los endpoints, ejemplos de solicitudes y respuestas, autenticación, códigos de estado HTTP y una interfaz interactiva para realizar pruebas. Este proyecto refleja buenas prácticas en el diseño, desarrollo y documentación de servicios RESTful.
                     </p>
                 </CardBody>
                 <CardFooter className="text-small grid grid-cols-12">
@@ -144,6 +149,9 @@ export default function Proyects() {
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Postman">
                             <Chip className="m-1 text-lg"><SiPostman/> </Chip>
+                        </Tooltip>
+                        <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="MySQL">
+                            <Chip className="m-1 text-lg"><SiMysql/> </Chip>
                         </Tooltip>
                    </div>
 
