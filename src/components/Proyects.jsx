@@ -18,7 +18,8 @@ export default function Proyects() {
         <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">Proyectos</h1>
 
         <div className="md:grid gap-12 grid-cols-12">
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
+            {/* Proyecto 1: SISTEMA DE LA DISAM */}
+            <Card className="col-span-12 md:col-span-6 lg:col-span-6 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image
@@ -27,7 +28,7 @@ export default function Proyects() {
                             src={proyecto1}
                         />
                     </div>
-                    <h3 className="font-semibold text-xl mb-6 text-justify">Sistema interno de la DISAM</h3>
+                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Sistema interno de la DISAM</h3>
                     <p className="text-justify">
                         Este proyecto lo realicé en mis prácticas profesionales para la Dirección de Salud Ambiental, una institución de gobierno en el cual se necesitaba poder llevar el registro y el control de usuarios, permisos laborales, reservaciones de salas de reuniones, eventos de la institución, registro y control de vehículos, registro y control de documentación, entre muchos más funciones.
                     </p>
@@ -35,13 +36,13 @@ export default function Proyects() {
                 <CardFooter className="text-small grid grid-cols-12">
                    <div className="col-span-6">
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 9">
-                            <Chip className="mr-1 text-lg"><FaLaravel/> </Chip>
+                            <Chip className="m-1 text-lg"><FaLaravel/> </Chip>
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="JavaScript">
-                            <Chip className="mr-1 text-lg"><IoLogoJavascript/> </Chip>
+                            <Chip className="m-1 text-lg"><IoLogoJavascript/> </Chip>
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="PHP 8.0">
-                            <Chip className="mr-1 text-lg"><MdOutlinePhp/> </Chip>
+                            <Chip className="m-1 text-lg"><MdOutlinePhp/> </Chip>
                         </Tooltip>
                    </div>
 
@@ -55,7 +56,8 @@ export default function Proyects() {
                 </CardFooter>
             </Card>
 
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
+            {/* Proyecto 2: Clon de pagina de toyota */}
+            <Card className="col-span-12 md:col-span-6 lg:col-span-6 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image
@@ -64,7 +66,7 @@ export default function Proyects() {
                             src={proyecto2}
                         />
                     </div>
-                    <h3 className="font-semibold text-xl mb-6 text-justify">Clon de página de Toyota</h3>
+                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">Clon de página de Toyota</h3>
                     <p className="text-justify">
                         Este proyecto lo realicé para practicar mis habilidades con React utilizando el framework de Next, en el cual solo realice la parte de front de la página, cambiando algunos aspectos de la página, corrigiendo algunos errores cuando la página se adapta a los tamaños. Este clon de esta página solo se realizó con fines educativos, página original: <a className="underline" href="https://www.toyota.com/" rel="noreferrer" target="_blank"> https://www.toyota.com/</a> 
                     </p>
@@ -72,13 +74,13 @@ export default function Proyects() {
                 <CardFooter className="text-small grid grid-cols-12">
                    <div className="col-span-6">
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="React">
-                            <Chip className="mr-1 text-lg"><FaReact/> </Chip>
+                            <Chip className="m-1 text-lg"><FaReact/> </Chip>
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="JavaScript">
-                            <Chip className="mr-1 text-lg"><IoLogoJavascript/> </Chip>
+                            <Chip className="m-1 text-lg"><IoLogoJavascript/> </Chip>
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Next JS 14">
-                            <Chip className="mr-1 text-lg"><TbBrandNextjs/> </Chip>
+                            <Chip className="m-1 text-lg"><TbBrandNextjs/> </Chip>
                         </Tooltip>
                    </div>
 
@@ -98,7 +100,8 @@ export default function Proyects() {
                 </CardFooter>
             </Card>
 
-            <Card className="col-span-12 md:col-span-6 lg:col-span-4 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
+            {/* Proyecto 3: api rest de tareas*/}
+            <Card className="col-span-12 md:col-span-6 lg:col-span-6 bg-colormind-cards mb-5 md:mb-0 hover:scale-105">
                 <CardBody>
                     <div className="w-full flex items-center justify-center">
                         <Image
@@ -107,7 +110,7 @@ export default function Proyects() {
                             src={proyecto3}
                         />
                     </div>
-                    <h3 className="font-semibold text-xl mb-6 text-justify">API REST para Gestión de Tareas</h3>
+                    <h3 className="font-semibold text-xl mb-6 text-justify my-2">API REST para Gestión de Tareas</h3>
                     <p className="text-justify">
                     Desarrollé una API REST con Laravel para la administración de tareas, usuarios, roles y categorías. La aplicación permite crear, asignar y gestionar tareas, así como administrar permisos y la organización de la información mediante categorías. La API fue documentada utilizando Postman y Swagger (OpenAPI), incluyendo todos los endpoints, ejemplos de solicitudes y respuestas, autenticación, códigos de estado HTTP y una interfaz interactiva para realizar pruebas. Este proyecto refleja buenas prácticas en el diseño, desarrollo y documentación de servicios RESTful.
                     </p>
@@ -115,7 +118,7 @@ export default function Proyects() {
                 <CardFooter className="text-small grid grid-cols-12">
                    <div className="col-span-6">
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Laravel 11">
-                            <Chip className="m-1 text-lg"><FaLaravel/> </Chip>
+                            <Chip className=" text-lg"><FaLaravel/> </Chip>
                         </Tooltip>
                         <Tooltip className="text-colormind-text bg-colormind-primary" showArrow={true} content="Swagger">
                             <Chip className="m-1 text-lg"><SiSwagger /> </Chip>
