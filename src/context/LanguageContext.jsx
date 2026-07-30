@@ -1,5 +1,6 @@
 import { createContext, useContext, useMemo, useState } from "react";
 import { languages } from "../content";
+import PropTypes from "prop-types";
 
 const LanguageContext = createContext();
 
@@ -27,6 +28,11 @@ export function LanguageProvider({ children }) {
     );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useLanguage() {
     return useContext(LanguageContext);
 }
+
+LanguageProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+};
