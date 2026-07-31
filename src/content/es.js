@@ -16,6 +16,8 @@ export default {
     downloadcv: "Descargar CV",
     contactme: "Contáctame",
     close: "Cerrar",
+    databases: "Bases de datos",
+    tools: "Herramientas",
     projects: [
         {
             id: "institutional",

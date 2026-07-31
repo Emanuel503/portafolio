@@ -25,12 +25,16 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { BsBootstrap } from "react-icons/bs";
 import { DiMysql, DiPostgresql } from "react-icons/di";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function TechnologiesSection() {
+
+  const { text } = useLanguage();
+  
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="technologies">
       <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">
-        Tecnologías
+        {text.navbar.technologies}
       </h1>
 
       <div className="grid gap-10 grid-cols-12">
@@ -116,7 +120,7 @@ export default function TechnologiesSection() {
 
         <div className="col-span-12 xl:col-span-6">
           <h3 className="text-colormind-text text-2xl font-bold text-center mb-10">
-            Base de datos
+            {text.databases}
           </h3>
           <div className="flex gap-8 justify-center flex-wrap">
             <TechnologyCard
@@ -153,7 +157,7 @@ export default function TechnologiesSection() {
 
         <div className="col-span-12 xl:col-span-6">
           <h3 className="text-colormind-text text-2xl font-bold text-center mb-10">
-            Herramientas
+            {text.tools}
           </h3>
           <div className="flex gap-8 justify-center flex-wrap">
             <TechnologyCard

@@ -16,6 +16,8 @@ export default {
     downloadcv: "Download CV",
     contactme: "Contact Me",
     close: "Close",
+    databases: "Databases",
+    tools: "Tools",
     projects: [
         {
             id: "institutional",
