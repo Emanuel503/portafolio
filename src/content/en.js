@@ -19,6 +19,9 @@ export default {
     databases: "Databases",
     tools: "Tools",
     responsibilities: "Responsibilities",
+    writetome: "Write to me",
+    sendemail: "Send email",
+    socialnetworks: "Social networks",
     projects: [
         {
             id: "institutional",
