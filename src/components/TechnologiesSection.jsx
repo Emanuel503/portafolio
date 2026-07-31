@@ -26,7 +26,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { BsBootstrap } from "react-icons/bs";
 import { DiMysql, DiPostgresql } from "react-icons/di";
 
-export default function Technologies() {
+export default function TechnologiesSection() {
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="technologies">
       <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">

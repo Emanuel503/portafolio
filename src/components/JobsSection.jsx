@@ -1,13 +1,13 @@
-import CardWork from "./CardWork";
+import JobCard from "./JobCard";
 
-export default function WorksSection() {
+export default function JobsSection() {
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="works">
       <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">
         Trabajos
       </h1>
 
-      <CardWork
+      <JobCard
         nombre="Desarrollador de software: Full Stack"
         lugar="Ministerio de Salud"
         fecha="2023 - Actualmente"
@@ -18,7 +18,7 @@ export default function WorksSection() {
         ]}
       />
 
-      <CardWork
+      <JobCard
         nombre="Técnico Informático: Full Stack"
         lugar="Dirección de Salud Ambiental"
         fecha="2022 - 2022"

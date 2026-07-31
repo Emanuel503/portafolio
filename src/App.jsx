@@ -1,31 +1,31 @@
-import BarraBusqueda from './components/NavegationBar'
+import NavegationBar from './components/NavegationBar'
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
-import StudiesSkills from "./components/StudiesSkills";
-import Contact from "./components/Contact";
+import StudiesSection from "./components/StudiesSection";
+import ContactSection from "./components/ContactSection";
 import LateralContacs from "./components/LateralContacs";
 import Arrows from "./components/Arrows";
-import Technologies from './components/Technologies';
-import WorksSection from './components/WorksSection';
+import TechnologiesSection from './components/TechnologiesSection';
+import JobsSection from './components/JobsSection';
 
 export default function App() {
   
   return (
     <>
-      <BarraBusqueda />
+      <NavegationBar />
       
       <main >
         <AboutSection/>
 
         <ProjectsSection/>
 
-        <Technologies/>
+        <TechnologiesSection/>
 
-        <StudiesSkills/>
+        <StudiesSection/>
 
-        <WorksSection/>
+        <JobsSection/>
 
-        <Contact/>
+        <ContactSection/>
       </main>
 
       <Arrows/>

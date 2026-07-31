@@ -3,7 +3,7 @@ import { FaSchoolFlag } from "react-icons/fa6";
 import { GiDiploma } from "react-icons/gi";
 import CardStudy from "./CardStudy";
 
-export default function StudiesSkills() {
+export default function StudiesSection() {
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64" id="studies-skills">
       <h1 className="text-colormind-text text-4xl font-bold text-center mb-10">

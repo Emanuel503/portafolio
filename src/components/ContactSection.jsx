@@ -2,7 +2,7 @@ import { Button, Link, Tooltip } from "@nextui-org/react";
 import { FaLinkedinIn, FaInstagram, FaWhatsapp  } from "react-icons/fa";
 import { BiLogoGithub  } from "react-icons/bi";
 
-export default function Contact() {
+export default function ContactSection() {
   return (
     <section className="pt-40 mx-10 lg:mx-20 xl:mx-64 text-colormind-text pb-20" id="contact">
         <h1 className="text-4xl font-bold text-center mb-10">Contacto</h1>

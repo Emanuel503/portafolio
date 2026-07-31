@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function CardWork({ nombre, lugar, fecha, funciones }) {
+export default function JobCard({ nombre, lugar, fecha, funciones }) {
   return (
     <div className="bg-colormind-cards text-colormind-text px-10 py-5 rounded-2xl mb-5 hover:translate-x-4 transition-transform col-span-12 lg:col-span-6 grid grid-cols-12 gap-2 items-center">
       <div className="col-span-12 xl:col-span-6">
@@ -20,7 +20,7 @@ export default function CardWork({ nombre, lugar, fecha, funciones }) {
   );
 }
 
-CardWork.propTypes = {
+JobCard.propTypes = {
   nombre: PropTypes.string.isRequired,
   lugar: PropTypes.string.isRequired,
   fecha: PropTypes.string.isRequired,
