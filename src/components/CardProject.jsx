@@ -134,7 +134,7 @@ export default function CardProject({
             <Tooltip
               className="text-colormind-text bg-colormind-primary"
               showArrow={true}
-              content="Repositorio"
+              content={text.repository}
             >
               <Button
                 href={urlRepositorio}

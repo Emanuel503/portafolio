@@ -24,6 +24,7 @@ export default {
     socialnetworks: "Social networks",
     next: "Next",
     previous: "Previous",
+    repository: "Repository",
     projects: [
         {
             id: "institutional",
