@@ -76,7 +76,7 @@ export default function NavegationBar() {
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link className="text-colormind-text text-lg" aria-current="page" href="#works">
+              <Link className="text-colormind-text text-lg" aria-current="page" href="#jobs">
                 <FaBuilding className="mr-2" />{text.navbar.jobs}
               </Link>
             </NavbarItem>
@@ -163,7 +163,7 @@ export default function NavegationBar() {
              <NavbarMenuItem >
               <Link
                 className="text-colormind-text w-full font-bold border-b-1 p-1.5 mb-2 border-colormind-text hover:bg-colormind-hover hover:translate-x-2 transition duration-1000"
-                href="#works"
+                href="#jobs"
                 size="lg"
                 onClick={() => closeNavBarMobile()}
               >
