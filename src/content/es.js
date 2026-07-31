@@ -102,7 +102,7 @@ export default {
         {
             title: "Curso de It Essentials",
             place: "Cisco Systems",
-            daterange: "Ene 2019- Nov 2019",
+            daterange: "Ene 2019 - Nov 2019",
             type: "course"
         },
     ]
