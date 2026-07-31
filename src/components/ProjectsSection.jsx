@@ -12,15 +12,16 @@ export default function Projects() {
       </h1>
 
       <div className="md:grid gap-12 grid-cols-12">
-        {text.projects.map((project, index) => (
+        {text.projects.map((project) => (
           <CardProject
-            key={index}
+            key={project.id}
             titulo={project.title}
             imagen={projectResources[project.id].image}
             urlRepositorio={project.urlGit}
             urlWeb={project.urlWeb}
             descripcion={project.description}
             tecnologias={project.technologies}
+            id={project.id}
           />
         ))}
       </div>

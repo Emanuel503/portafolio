@@ -13,7 +13,7 @@ export default function StudiesSection() {
       <div className="grid grid-cols-12 gap-x-6">
         {text.studies.map((study, index) => (
           <CardStudy
-            key={index}
+             key={`studies-${index}`}
             nombre={study.title}
             lugar={study.place}
             fecha={study.daterange}

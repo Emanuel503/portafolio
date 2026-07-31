@@ -49,7 +49,7 @@ export default function CardProject({
     descripcion: PropTypes.array.isRequired,
     urlRepositorio: PropTypes.string,
     urlWeb: PropTypes.string,
-    tecnologias: PropTypes.node,
+    tecnologias: PropTypes.array,
   };
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -92,24 +92,22 @@ export default function CardProject({
           </h3>
           <div className="text-justify">
             {descripcion.map((paragraph, index) => (
-              <>
-                <p key={index} className="mb-4">
-                  {paragraph}
-                </p>
-              </>
+              <p key={`paragraph-${index}`} className="mb-4">
+                {paragraph}
+              </p>
             ))}
           </div>
         </CardBody>
         <CardFooter className="text-small grid grid-cols-12">
           <div className="col-span-6">
-            {tecnologias.map((tec) => (
+            {tecnologias.map((tec, index) => (
               <Tooltip
-                key={tec}
+                key={`tec-${index}`}
                 className="text-colormind-text bg-colormind-primary"
                 showArrow={true}
                 content={tec}
               >
-                <Chip className="m-1 text-lg">{icons[tec]} </Chip>
+                <Chip key={`tecchip -${index}`} className="m-1 text-lg">{icons[tec]} </Chip>
               </Tooltip>
             ))}
           </div>
