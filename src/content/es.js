@@ -5,7 +5,7 @@ export default {
         projects: "Proyectos",
         technologies: "Tecnologías",
         studies: "Estudios",
-        jobs: "Trabajos",
+        jobs: "Empleos",
         contact: "Contacto",
         closemenu: "Cerrar menu",
         openmenu: "Abrir menu"
