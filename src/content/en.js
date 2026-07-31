@@ -22,6 +22,8 @@ export default {
     writetome: "Write to me",
     sendemail: "Send email",
     socialnetworks: "Social networks",
+    next: "Next",
+    previous: "Previous",
     projects: [
         {
             id: "institutional",
