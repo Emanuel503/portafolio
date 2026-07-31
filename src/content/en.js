@@ -5,7 +5,7 @@ export default {
         projects: "Projects",
         technologies: "Technologies",
         studies: "Studies",
-        works: "Jobs",
+        jobs: "Jobs",
         contact: "Contact",
         closemenu: "Close menu",
         openmenu: "Open menu"
@@ -18,6 +18,7 @@ export default {
     close: "Close",
     databases: "Databases",
     tools: "Tools",
+    responsibilities: "Responsibilities",
     projects: [
         {
             id: "institutional",
@@ -104,6 +105,28 @@ export default {
             place: "Cisco Systems",
             daterange: "Jan 2019 - Nov 2019",
             type: "course"
+        }
+    ],
+    jobs: [
+        {
+            title: "Full Stack Software Developer",
+            place: "Ministry of Health",
+            daterange: "2023 - Present",
+            responsibilities: [
+                "Develop and maintain web applications using Laravel, Symfony, Next.js, React, and Vue.js.",
+                "Design and implement new features, as well as optimize and maintain existing systems.",
+                "Manage and query relational and non-relational databases, including writing and optimizing SQL queries."
+            ]
+        },
+        {
+            title: "Full Stack IT Technician",
+            place: "Environmental Health Directorate",
+            daterange: "2022",
+            responsibilities: [
+                "Developed and maintained the institution's web-based management system using Laravel.",
+                "Provided technical support to users, including diagnosing and resolving issues with desktop computers, laptops, printers, and other IT equipment.",
+                "Assisted with the installation and configuration of software, operating systems, and peripheral devices according to institutional requirements."
+            ]
         }
     ]
 }

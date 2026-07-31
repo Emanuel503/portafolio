@@ -5,7 +5,7 @@ export default {
         projects: "Proyectos",
         technologies: "Tecnologías",
         studies: "Estudios",
-        works: "Trabajos",
+        jobs: "Trabajos",
         contact: "Contacto",
         closemenu: "Cerrar menu",
         openmenu: "Abrir menu"
@@ -18,6 +18,7 @@ export default {
     close: "Cerrar",
     databases: "Bases de datos",
     tools: "Herramientas",
+    responsibilities: "Responsabilidades",
     projects: [
         {
             id: "institutional",
@@ -105,5 +106,27 @@ export default {
             daterange: "Ene 2019 - Nov 2019",
             type: "course"
         },
+    ],
+    jobs: [
+        {
+            title: "Desarrollador de software: Full Stack",
+            place: "Ministerio de Salud",
+            daterange: "2023 - Actualmente",
+            responsibilities: [
+                "Desarrollo, mantenimiento y mejora de aplicaciones web utilizando Laravel, Symfony, Next.js, React y Vue.js.",
+                "Diseño e implementación de nuevas funcionalidades, así como optimización y corrección de sistemas existentes.",
+                "Administración y consulta de bases de datos relacionales y no relacionales, incluyendo elaboración y optimización de consultas SQL.",
+            ]
+        },
+        {
+            title: "Técnico Informático Full Stack",
+            place: "Dirección de Salud Ambiental",
+            daterange: "2022",
+            responsibilities: [
+                "Desarrollo y mantenimiento del sistema web de administración institucional utilizando Laravel.",
+                "Soporte técnico a usuarios, incluyendo diagnóstico y resolución de problemas en equipos de escritorio, laptops, impresoras y otros dispositivos informáticos.",
+                "Apoyo en la instalación y configuración de software, sistemas operativos y periféricos según las necesidades institucionales",
+            ]
+        }
     ]
 }

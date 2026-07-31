@@ -77,7 +77,7 @@ export default function NavegationBar() {
             </NavbarItem>
             <NavbarItem>
               <Link className="text-colormind-text text-lg" aria-current="page" href="#works">
-                <FaBuilding className="mr-2" />{text.navbar.works}
+                <FaBuilding className="mr-2" />{text.navbar.jobs}
               </Link>
             </NavbarItem>
             <NavbarItem>
@@ -167,7 +167,7 @@ export default function NavegationBar() {
                 size="lg"
                 onClick={() => closeNavBarMobile()}
               >
-                <FaBuilding className="mr-2" />{text.navbar.works}
+                <FaBuilding className="mr-2" />{text.navbar.jobs}
               </Link>
             </NavbarMenuItem>
 
