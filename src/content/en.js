@@ -67,5 +67,43 @@ export default {
             urlGit: "https://github.com/Emanuel503/to-do-list-api",
             urlWeb: "https://mega.nz/file/tRFWVa7b#9JLkd0ms2vqNsZOKpZ_5dH5CUJzbiHOChK9YNfcATD0"
         }
+    ],
+    studies: [
+        {
+            title: "Intermediate English Course",
+            place: "English4Callcenters",
+            daterange: "Jan 2025 - Dec 2025",
+            type: "course"
+        },
+        {
+            title: "Computer Engineering Technician",
+            place: "Universidad Don Bosco",
+            daterange: "Jan 2021 - Jun 2023",
+            type: "university"
+        },
+        {
+            title: "MERN Course",
+            place: "Udemy",
+            daterange: "Jan 2020 - Nov 2020",
+            type: "course"
+        },
+        {
+            title: "Software Development Technician",
+            place: "Colegio El Espíritu Santo",
+            daterange: "Jan 2018 - Nov 2020",
+            type: "highschool"
+        },
+        {
+            title: "CCNA Routing and Switching Course",
+            place: "Cisco Systems",
+            daterange: "Jan 2020 - Nov 2020",
+            type: "course"
+        },
+        {
+            title: "IT Essentials Course",
+            place: "Cisco Systems",
+            daterange: "Jan 2019 - Nov 2019",
+            type: "course"
+        }
     ]
 }
