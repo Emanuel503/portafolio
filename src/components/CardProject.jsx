@@ -32,6 +32,7 @@ import {
 import { TbBrandNextjs, TbPlugConnectedX } from "react-icons/tb";
 import PropTypes from "prop-types";
 import { DiPostgresql } from "react-icons/di";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function CardProject({
   titulo,
@@ -45,13 +46,15 @@ export default function CardProject({
     titulo: PropTypes.string.isRequired,
     imagen: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
       .isRequired,
-    descripcion: PropTypes.node.isRequired,
+    descripcion: PropTypes.array.isRequired,
     urlRepositorio: PropTypes.string,
     urlWeb: PropTypes.string,
     tecnologias: PropTypes.node,
   };
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const { text } = useLanguage();
 
   const icons = {
     Laravel: <FaLaravel />,
@@ -87,7 +90,15 @@ export default function CardProject({
           <h3 className="font-semibold text-xl mb-6 text-justify my-2">
             {titulo}
           </h3>
-          <div className="text-justify">{descripcion}</div>
+          <div className="text-justify">
+            {descripcion.map((paragraph, index) => (
+              <>
+                <p key={index} className="mb-4">
+                  {paragraph}
+                </p>
+              </>
+            ))}
+          </div>
         </CardBody>
         <CardFooter className="text-small grid grid-cols-12">
           <div className="col-span-6">
@@ -173,7 +184,7 @@ export default function CardProject({
 
               <ModalFooter>
                 <Button color="default" onPress={onClose}>
-                  Cerrar
+                  {text.close}
                 </Button>
               </ModalFooter>
             </>
